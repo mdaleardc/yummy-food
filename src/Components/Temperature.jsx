@@ -36,7 +36,7 @@ const Temperature = () => {
     <div className='absolute top-[35%] left-[31%] z-10 md:top-[15%] md:left-[42%]'>
     <div className="w-[160px] h-[160px] border-[3px] rounded-[50%] flex flex-col justify-center items-center font-black text-3xl text-[white]" style={{background: color}}> {count} °C</div>
     <div className='flex flex-row gap-[24px] mt-[30px] w-[100px] items-center justify-center my-[0] mx-[auto]'>
-    <button type="button" className="bg-[#cc0] w-[50px] rounded text-3xl text-[red]" onClick={temPlus}>+</button>
+    <button type="button" className="bg-[#aa0] w-[50px] rounded text-3xl text-[red]" onClick={temPlus}>+</button>
     <button type="button" className="bg-[#0e8] w-[50px] rounded text-3xl text-[white]" onClick={temMinus}>-</button>
     </div>
     </div>
