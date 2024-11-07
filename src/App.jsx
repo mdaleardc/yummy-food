@@ -4,7 +4,7 @@ import Temperature from "./Components/Temperature"
 function App() {
 
   return (
-    <div>
+    <div className="bg-[red]">
       <Temperature />
     </div>
   )
