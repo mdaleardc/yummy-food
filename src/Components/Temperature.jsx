@@ -1,4 +1,4 @@
-import { React, useState } from "react"
+import { React, useState, useEffect } from "react"
 import mobileFrame from "../Assets/mobile-frame.png"
 
 const Temperature = () => {
@@ -25,6 +25,10 @@ const Temperature = () => {
      };
   }
   
+  
+  useEffect(()=>{
+    alert("Hello DevCode " + color);
+  }, [color])
   
   return (
     <div className="bg-[#aaa] w-[90vw] h-[50%] flex flex-col justify-center content-center fixed top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%]">
