@@ -1,11 +1,10 @@
 import React from "react"
-import Temperature from "./Components/Temperature"
 
 function App() {
 
   return (
     <div className="bg-[red]">
-      <Temperature />
+    <h1>App Component</h1>
     </div>
   )
 }
