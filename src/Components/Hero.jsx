@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { LiaAngleLeftSolid, LiaAngleRightSolid } from "react-icons/lia";
 
 import recipe1 from "../Assets/recipe1.jpg";
@@ -27,14 +27,25 @@ const Hero = () => {
   const handleMinus = () => {
     setRecipe(recipe === 0 ? recipeData.length - 1 : recipe - 1);
   };
+  
+  useEffect(()=> {
+  const slidTimer = setInterval(()=>{
+    handlePlus();
+  }, 2000);
+  
+  return ()=>clearInterval(slidTimer);
+  
+  }, [recipe]);
+  
+  
 
   return (
-    <div className="relative w-full h-[50vh] sm:h-[80vh] mt-[2.3rem]">
-      <img src={recipeData[recipe].src} alt="" className="w-full h-full object-cover absolute top-0 left-0 z-[1]" />
-      <button className="absolute z-[2] top-[40%] left-0 text-[#f05] cursor-pointer" onClick={handleMinus}>
+    <div className="relative w-full h-[40vh] sm:h-[80vh] mt-[2.3rem]">
+      <img src={recipeData[recipe].src} alt="" className="w-full h-full object-cover absolute top-0 left-0 z-[1]" loading="lazy"/>
+      <button className="absolute z-[2] top-[40%] left-[0.5rem] text-[#f05] cursor-pointer" onClick={handleMinus}>
         <LiaAngleLeftSolid size={30} />
       </button>
-      <button className="absolute z-[2] top-[40%] right-0 text-[#f05] cursor-pointer" onClick={handlePlus}>
+      <button className="absolute z-[2] top-[40%] right-[0.5rem] text-[#f05] cursor-pointer" onClick={handlePlus}>
         <LiaAngleRightSolid size={30} />
       </button>
     </div>
