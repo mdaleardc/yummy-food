@@ -42,10 +42,15 @@ const Hero = () => {
   return (
     <div className="relative w-full h-[40vh] sm:h-[80vh] mt-[2.3rem]">
       <img src={recipeData[recipe].src} alt="" className="w-full h-full object-cover absolute top-0 left-0 z-[1]" loading="lazy"/>
-      <button className="absolute z-[2] top-[40%] left-[0.5rem] text-[#f05] cursor-pointer" onClick={handleMinus}>
+      
+      <div  className="absolute z-[2] bg-[#00000080] w-full h-[100%]">
+      <h1 className='text-center text-[#ffff] mt-[30%] text-2xl font-semibold'>Welcome! Dive into a World of Deliciousness at YummiFood!</h1>
+      </div>
+      <button className="absolute z-[3] top-[40%] left-[0.5rem] text-[#f05] cursor-pointer" onClick={handleMinus}>
         <LiaAngleLeftSolid size={30} />
       </button>
-      <button className="absolute z-[2] top-[40%] right-[0.5rem] text-[#f05] cursor-pointer" onClick={handlePlus}>
+      
+      <button className="absolute z-[3] top-[40%] right-[0.5rem] text-[#f05] cursor-pointer" onClick={handlePlus}>
         <LiaAngleRightSolid size={30} />
       </button>
     </div>
