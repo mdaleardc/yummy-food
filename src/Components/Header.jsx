@@ -28,7 +28,7 @@ const Header = () => {
     
     {
       sideNave ? <div className="font-semibold bg-[#39A0FF] text-white absolute top-0 right-0 w-[150px] h-[100vh] flex justify-center items-center">
-    <RxCross1 onClick={handleChange} size={25} className="absolute top-2 left-3 cursor-pointer"/>
+    <RxCross1 onClick={handleChange} size={30} className="absolute top-2 left-3 cursor-pointer hover:text-[#ff0340] font-bold"/>
     <ul className="flex gap-6 flex-col">
     <li className="cursor-pointer hover:text-[#FF4800]" onClick={handleChange}>Home</li>
     <li className="cursor-pointer hover:text-[#FF4800]" onClick={handleChange}>About</li>
@@ -40,9 +40,9 @@ const Header = () => {
     
     <div className="font-semibold flex gap-5 justify-items-center items-center">
     <div className="sm:hidden cursor-pointer">
-    <GiHamburgerMenu size={30} onClick={handleChange}/>
+    <GiHamburgerMenu size={30} className="hover:text-[orange]" onClick={handleChange}/>
     </div>
-    <h3 className="cursor-pointer"><MdShoppingCart size={30}/></h3>
+    <h3 className="cursor-pointer"><MdShoppingCart size={30} className="hover:text-[orange]"/></h3>
     </div>
     </div>
     )
