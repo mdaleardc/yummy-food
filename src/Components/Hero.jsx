@@ -40,20 +40,22 @@ const Hero = () => {
   
 
   return (
-    <div className="relative w-full h-[40vh] sm:h-[80vh] mt-[2.3rem]">
-      <img src={recipeData[recipe].src} alt="" className="w-full h-full object-cover absolute top-0 left-0 z-[1]" loading="lazy"/>
+    <>
+    <div className="relative w-[90%] h-[40vh] sm:h-[450px] mt-[2.3rem] mx-auto mt-[3rem]">
+      <img src={recipeData[recipe].src} alt="" className="w-full h-full object-cover absolute top-0 left-0 z-[1] rounded-[20px]" loading="lazy"/>
       
-      <div  className="absolute z-[2] bg-[#00000080] w-full h-[100%]">
-      <h1 className='text-center text-[#ffff] mt-[30%] text-2xl font-semibold'>Welcome! Dive into a World of Deliciousness at YummiFood!</h1>
+      <div  className="absolute z-[2] bg-[#00000080] w-full h-[100%] flex justify-center items-center rounded-[20px]">
+      <h1 className='text-center text-[#ffff] sm:text-2xl sm:font-semibold'>Welcome! Dive into a World of Deliciousness at YummiFood!</h1>
       </div>
-      <button className="absolute z-[3] top-[40%] left-[0.5rem] text-[#f05] cursor-pointer" onClick={handleMinus}>
+      <button className="absolute z-[3] top-[45%] left-[0.5rem] text-[#f05] cursor-pointer" onClick={handleMinus}>
         <LiaAngleLeftSolid size={30} />
       </button>
       
-      <button className="absolute z-[3] top-[40%] right-[0.5rem] text-[#f05] cursor-pointer" onClick={handlePlus}>
+      <button className="absolute z-[3] top-[45%] right-[0.5rem] text-[#f05] cursor-pointer" onClick={handlePlus}>
         <LiaAngleRightSolid size={30} />
       </button>
     </div>
+    </>
   );
 };
 
