@@ -33,20 +33,21 @@ const TopPick = () => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToShow: 1,
+          slidesToScroll: 1
         }
       }
     ]
   }
   
   return (
-    <div className='my-[60px] bg-gray-500'>
+    <div className='bg-gray-600 w-[100%]'>
+    <div className='mx-auto my-[60px] px-[10px] w-[85%]'>
     <Slider {...settings}>
     {
       Data.map(item => {
       return (
-      <div className='bg-[ffff]'>
+      <div className='w-[80%]'>
       <div className='mx-auto my-0 text-center font-semibold'>
       <h3>{item.title}</h3>
       <h4>Price: {item.price}৳</h4>
@@ -60,6 +61,7 @@ const TopPick = () => {
       })
     }
     </Slider>
+    </div>
     </div>
     )
 }
