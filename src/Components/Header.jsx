@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { MdShoppingCart } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross1 } from "react-icons/rx";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   const [sideNav, setSideNav] = useState(false);
@@ -18,21 +19,41 @@ const Header = () => {
       
       <div>
         <ul className="sm:flex gap-5 hidden">
+          
+        <NavLink to="/">
           <li className="cursor-pointer hover:text-[#FF4800]">Home</li>
-          <li className="cursor-pointer hover:text-[#FF4800]">About</li>
-          <li className="cursor-pointer hover:text-[#FF4800]">Offers</li>
+        </NavLink>
+         <NavLink to="/aboutus">
+          <li className="cursor-pointer hover:text-[#FF4800]">About Us</li>
+         </NavLink>
+         <NavLink to="/ourfood">
+          <li className="cursor-pointer hover:text-[#FF4800]">Our Food</li>
+         </NavLink>
+         <NavLink to="/signin">
           <li className="cursor-pointer hover:text-[#FF4800]">Sign In</li>
+         </NavLink>
+           
         </ul>
       </div>
 
       {sideNav && (
-        <div className="font-semibold bg-[#39A0FF] text-white fixed top-0 right-0 w-[150px] h-[100vh] flex justify-center items-center z-[999]">
+        <div className="font-semibold bg-[#39A0aa] text-white fixed top-0 right-0 w-[150px] h-[100vh] flex justify-center items-center z-[999]">
           <RxCross1 onClick={handleChange} size={30} className="absolute top-2 left-3 cursor-pointer hover:text-[#ff0340] font-bold" />
           <ul className="flex gap-6 flex-col">
-            <li className="cursor-pointer hover:text-[#FF4800]" onClick={handleChange}>Home</li>
-            <li className="cursor-pointer hover:text-[#FF4800]" onClick={handleChange}>About</li>
-            <li className="cursor-pointer hover:text-[#FF4800]" onClick={handleChange}>Offers</li>
-            <li className="cursor-pointer hover:text-[#FF4800]" onClick={handleChange}>Sign In</li>
+             
+        <NavLink to="/">
+          <li className="cursor-pointer hover:text-[#FF4800]"  onClick={handleChange}>Home</li>
+        </NavLink>
+         <NavLink to="/toppick">
+          <li className="cursor-pointer hover:text-[#FF4800]"  onClick={handleChange}>About Us</li>
+         </NavLink>
+         <NavLink to="/ourfood">
+          <li className="cursor-pointer hover:text-[#FF4800]"  onClick={handleChange}>Our Food</li>
+         </NavLink>
+         <NavLink to="/delivery">
+          <li className="cursor-pointer hover:text-[#FF4800]"  onClick={handleChange}>Sign In</li>
+         </NavLink>
+         
           </ul>
         </div>
       )}

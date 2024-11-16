@@ -7,7 +7,7 @@ const OurFood = () => {
   
   return (
     <div className='w-full'>
-    <h1 className='text-4xl text-[#fe3] font-bold text-center my-[1rem]'>Our Foods</h1>
+    <h1 className='text-4xl text-[#fe3] font-bold text-center my-[3rem]'>Our Foods</h1>
     <div className='grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-[15px]'>
     {
       Data.map(meal => {

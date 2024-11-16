@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { LiaAngleLeftSolid, LiaAngleRightSolid } from "react-icons/lia";
+import TopPick from "./TopPick";
+import OurFood from "./OurFood";
+import Delivery from "./Delivery";
 
 import recipe1 from "../Assets/recipe1.jpg";
 import recipe2 from "../Assets/recipe2.jpg";
@@ -55,6 +58,7 @@ const Hero = () => {
         <LiaAngleRightSolid size={30} />
       </button>
     </div>
+    
     </>
   );
 };

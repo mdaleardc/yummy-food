@@ -1,10 +1,11 @@
 import React from "react";
 import Header from "./Components/Header";
-import Hero from "./Components/Hero";
-import Delivery from "./Components/Delivery";
-import Footer from "./Components/Footer";
-import TopPick from "./Components/TopPick";
+import Home from "./Components/Home";
+import AboutUs from "./Components/AboutUs";
 import OurFood from "./Components/OurFood";
+import SignIn from "./Components/SignIn";
+import Footer from "./Components/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 
@@ -12,13 +13,19 @@ import OurFood from "./Components/OurFood";
 function App() {
 
   return (
-    <div className="header bg-[#1115]">
+    <div>
+    <BrowserRouter>
     <Header />
-    <Hero />
-    <TopPick />
-    <OurFood />
-    <Delivery />
+    <Routes>
+    
+    <Route path="/" element={<Home />}/>
+    <Route path="/aboutus" element={<AboutUs />}/>
+    <Route path="/ourfood" element={<OurFood />}/>
+    <Route path="/signin" element={<SignIn />}/>
+    
+    </Routes>
     <Footer />
+    </BrowserRouter>
     </div>
   )
 }

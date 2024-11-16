@@ -7,7 +7,7 @@ const Delivery = () => {
   
   return (
     <>
-    <div className="bg-[#555] w-full py-[1rem] my-[0.5rem]">
+    <div className="bg-[#555] w-full py-[1rem] my-[3rem]">
     <h3 className='text-[#ff0] font-bold text-center text-3xl py-[0.5rem]'>Quick Delivery App</h3>
     
     <div className='grid grid-cols-1 md:grid-cols-2 w-[95%] sm:w-[80%] mx-auto my-5'>
