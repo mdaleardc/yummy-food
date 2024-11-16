@@ -41,16 +41,15 @@ const TopPick = () => {
   }
   
   return (
-    <div className='mx-auto my-[60px] px-[30px] w-[100%]'>
+    <div className='mx-auto my-[60px] px-[30px] w-[100%]  bg-white'>
     <h1 className="text-4xl font-bold text-center py-[1rem]">What's on your mind?</h1>
     <Slider {...settings}>
     {
       Data.map(item => {
       return (
-      <div className='w-[100%] bg-white' key={item.id}>
+      <div className='w-[100%]' key={item.id}>
       <div className='mx-auto my-0 text-center font-semibold'>
       <h3>{item.title}</h3>
-      <h4>Price: {item.price}৳</h4>
       </div>
       <div className='w-[150px] h-[150px] rounded-[50%] mx-auto my-0'>
       <img src={item.img} alt={item.title} className="w-full h-full object-cover rounded-[50%] border-[3px]"/>

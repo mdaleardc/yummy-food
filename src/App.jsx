@@ -4,6 +4,7 @@ import Hero from "./Components/Hero";
 import Delivery from "./Components/Delivery";
 import Footer from "./Components/Footer";
 import TopPick from "./Components/TopPick";
+import OurFood from "./Components/OurFood";
 
 
 
@@ -11,10 +12,11 @@ import TopPick from "./Components/TopPick";
 function App() {
 
   return (
-    <div className="header">
+    <div className="header bg-[#1115]">
     <Header />
     <Hero />
     <TopPick />
+    <OurFood />
     <Delivery />
     <Footer />
     </div>
