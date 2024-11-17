@@ -4,7 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross1 } from "react-icons/rx";
 import { Link, NavLink } from "react-router-dom";
 
-const Header = () => {
+const Header = ({counter}) => {
   const [sideNav, setSideNav] = useState(false);
 
   const handleChange = () => {
@@ -12,9 +12,11 @@ const Header = () => {
   };
 
   return (
-    <div className="fixed top-0 left-0 w-full h-[2.3rem] flex justify-between items-center px-[5px] bg-gray-300 shadow-md z-[1000]">
+    <div className="fixed top-0 left-0 w-full h-[3rem] flex justify-between items-center px-[5px] bg-gray-300 shadow-md z-[1000]">
       <div>
-        <h1 className="font-semibold">Yummi<span className="text-[#FF0059] font-light">Food</span></h1>
+      <Link to="/">
+        <h1 className="font-semibold cursor-pointer">Yummi<span className="text-[#FF0059] font-light">Food</span></h1>
+        </Link>
       </div>
       
       <div>
@@ -44,13 +46,13 @@ const Header = () => {
         <NavLink to="/">
           <li className="cursor-pointer hover:text-[#FF4800]"  onClick={handleChange}>Home</li>
         </NavLink>
-         <NavLink to="/toppick">
+         <NavLink to="/aboutus">
           <li className="cursor-pointer hover:text-[#FF4800]"  onClick={handleChange}>About Us</li>
          </NavLink>
          <NavLink to="/ourfood">
           <li className="cursor-pointer hover:text-[#FF4800]"  onClick={handleChange}>Our Food</li>
          </NavLink>
-         <NavLink to="/delivery">
+         <NavLink to="/signin">
           <li className="cursor-pointer hover:text-[#FF4800]"  onClick={handleChange}>Sign In</li>
          </NavLink>
          
@@ -62,9 +64,10 @@ const Header = () => {
         <div className="sm:hidden cursor-pointer">
           <GiHamburgerMenu size={30} className="hover:text-[orange]" onClick={handleChange} />
         </div>
-        <h3 className="cursor-pointer">
-          <MdShoppingCart size={30} className="hover:text-[orange]" />
-        </h3>
+        <div className="cursor-pointer">
+        <p className='text-xs'>{counter}</p>
+          <MdShoppingCart size={25} className="hover:text-[orange]" />
+        </div>
       </div>
     </div>
   );

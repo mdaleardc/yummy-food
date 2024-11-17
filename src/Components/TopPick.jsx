@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const TopPick = () => {
+const TopPick = ({addCounter}) => {
   
   var settings = {
     dots: true,
@@ -54,7 +54,7 @@ const TopPick = () => {
       <div className='w-[150px] h-[150px] rounded-[50%] mx-auto my-0'>
       <img src={item.img} alt={item.title} className="w-full h-full object-cover rounded-[50%] border-[3px]"/>
       </div>
-      <button className='text-white bg-black text-xl rounded block mx-auto my-[3px] p-[0.4rem] hover:text-[#f24] hover:bg-white'>Order Now</button>
+      <button className='text-white bg-black text-xl rounded block mx-auto my-[3px] p-[0.4rem] hover:text-[#f24] hover:bg-white' onClick={addCounter}>Order Now</button>
       </div>
       )
       })

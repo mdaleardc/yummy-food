@@ -12,3 +12,13 @@
 .slick-prev:hover, .slick-next:hover {
   background: #2f0 !important;
 }
+
+form {
+  margin: 0 auto;
+}
+
+input {
+  height: 3rem;
+  outline: none;
+  background: #FFFEFF;
+}

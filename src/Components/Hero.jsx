@@ -44,7 +44,7 @@ const Hero = () => {
 
   return (
     <>
-    <div className="relative w-[90%] h-[40vh] sm:h-[450px] mt-[2.3rem] mx-auto mt-[3rem]">
+    <div className="relative w-[90%] h-[40vh] sm:h-[450px] mx-auto mt-[4rem]">
       <img src={recipeData[recipe].src} alt="" className="w-full h-full object-cover absolute top-0 left-0 z-[1] rounded-[20px]" loading="lazy"/>
       
       <div  className="absolute z-[2] bg-[#00000080] w-full h-[100%] flex justify-center items-center rounded-[20px]">
