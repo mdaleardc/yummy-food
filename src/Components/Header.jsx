@@ -64,8 +64,8 @@ const Header = ({counter}) => {
         <div className="sm:hidden cursor-pointer">
           <GiHamburgerMenu size={30} className="hover:text-[orange]" onClick={handleChange} />
         </div>
-        <div className="cursor-pointer">
-        <p className='text-xs'>{counter}</p>
+        <div className="cursor-pointer relative">
+        <p className='text-md font-semibold text-[#ff2004] absolute top-[-9px] left-[5px]'>{counter}</p>
           <MdShoppingCart size={25} className="hover:text-[orange]" />
         </div>
       </div>

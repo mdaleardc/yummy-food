@@ -41,7 +41,7 @@ const TopPick = ({addCounter}) => {
   }
   
   return (
-    <div className='mx-auto my-[60px] px-[30px] w-[100%]  bg-white'>
+    <div className='mx-auto my-[60px] w-[100%]  bg-white'>
     <h1 className="text-4xl font-bold text-center py-[1rem]">What's on your mind?</h1>
     <Slider {...settings}>
     {

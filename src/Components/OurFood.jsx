@@ -6,8 +6,8 @@ const OurFood = ({addCounter}) => {
   
   
   return (
-    <div className='w-full'>
-    <h1 className='text-4xl text-[#fe3] font-bold text-center my-[4rem]'>Our Foods</h1>
+    <div className='w-full  my-[4rem]'>
+    <h1 className='text-4xl bg-white text-[#f25] font-bold text-center mb-[1rem] sticky top-[3rem] left-0'>Our Foods</h1>
     <div className='grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-[15px]'>
     {
       Data.map(meal => {

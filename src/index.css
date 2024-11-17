@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.slick-prev, .slick-next {
+/*.slick-prev, .slick-next {
   background: #333 !important;
   border-radius: 50% !important;
   padding: 0 !important;
@@ -21,4 +21,4 @@ input {
   height: 3rem;
   outline: none;
   background: #FFFEFF;
-}
+}*/
