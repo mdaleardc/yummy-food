@@ -12,14 +12,14 @@ const Header = ({counter}) => {
   };
 
   return (
-    <div className="fixed top-0 left-0 w-full h-[3rem] flex justify-between items-center px-[5px] bg-gray-300 shadow-md z-[1000]">
-      <div>
+    <div className="fixed top-0 left-0 w-[100vw] h-[3rem] flex justify-between items-center px-[5px] bg-gray-300 shadow-md z-[1000]">
+      <div className='font-bold'>
       <Link to="/">
         <h1 className="font-semibold cursor-pointer">Yummi<span className="text-[#FF0059] font-light">Food</span></h1>
         </Link>
       </div>
       
-      <div>
+      <div className='font-bold'>
         <ul className="sm:flex gap-5 hidden">
           
         <NavLink to="/">
@@ -65,7 +65,7 @@ const Header = ({counter}) => {
           <GiHamburgerMenu size={30} className="hover:text-[orange]" onClick={handleChange} />
         </div>
         <div className="cursor-pointer relative">
-        <p className='text-md font-semibold text-[#ff2004] absolute top-[-9px] left-[5px]'>{counter}</p>
+        <p className='text-md font-semibold text-[#ff2004] absolute top-[-50%] left-[18%]'>{counter}</p>
           <MdShoppingCart size={25} className="hover:text-[orange]" />
         </div>
       </div>

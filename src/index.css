@@ -2,17 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/*.slick-prev, .slick-next {
-  background: #333 !important;
-  border-radius: 50% !important;
-  padding: 0 !important;
-  margin: 0 !important;
+.slick-prev, .slick-next {
+  display: none!important;
 }
 
-.slick-prev:hover, .slick-next:hover {
-  background: #2f0 !important;
-}
-
+/*
 form {
   margin: 0 auto;
 }
@@ -22,3 +16,4 @@ input {
   outline: none;
   background: #FFFEFF;
 }*/
+
